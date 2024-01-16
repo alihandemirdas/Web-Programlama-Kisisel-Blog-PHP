@@ -1,0 +1,10 @@
+<?php 
+session_start();
+unset($_SESSION["ADMIN"]);
+unset($_SESSION["KULLANICI"]);
+unset($_SESSION["AD_SOYAD"]);
+unset($_SESSION["PROFIL_RESMI"]);
+session_destroy();
+header("Location:index.php");
+print_r($_SESSION);
+?>
